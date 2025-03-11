@@ -8,7 +8,7 @@ if "chat" not in st.session_state:
 st.title=('chatbot')
 st.write('This is chatbot made by Pranathi.......')
 if "message" not in st.session_state:
-  st.session.message=[]
+  st.session.messages=[]
 for message in st.session_state.message:
   with st.chat_message(message["role"]):
     st.markdown(message["content"])
